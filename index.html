@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elliot Yesli</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+            background: #fafafa;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .header {
+            padding: 80px 0 40px;
+            text-align: center;
+        }
+
+        .name {
+            font-size: 3.5rem;
+            font-weight: 300;
+            letter-spacing: -0.02em;
+            margin-bottom: 8px;
+            color: #000;
+        }
+
+        .title {
+            font-size: 1.2rem;
+            font-weight: 400;
+            color: #666;
+            margin-bottom: 60px;
+        }
+
+        .content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: start;
+            margin-bottom: 120px;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .profile-image {
+            width: 100%;
+            max-width: 400px; /* Ограничиваем максимальную ширину */
+            height: auto; /* Сохраняем пропорции */
+            object-fit: contain; /* Вся фотография видна без обрезки */
+            border-radius: 10px;
+            display: block;
+        }
+        .text-content {
+            padding-top: 20px;
+        }
+
+        .section-title {
+            font-size: 1rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: #999;
+            margin-bottom: 30px;
+        }
+
+        .description {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #333;
+            margin-bottom: 40px;
+        }
+
+        .description p {
+            margin-bottom: 24px;
+        }
+
+        .contact-info {
+            display: grid;
+            gap: 15px;
+        }
+
+        .contact-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .contact-label {
+            font-weight: 500;
+            color: #666;
+        }
+
+        .contact-value {
+            color: #000;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 60px 0;
+            border-top: 1px solid #eee;
+            color: #999;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .content {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+            
+            .name {
+                font-size: 2.5rem;
+            }
+            
+            .header {
+                padding: 60px 0 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="name">Elliot Yesli</h1>
+            <div class="title"></div>
+        </header>
+
+        <main class="content">
+          <div class="image-container">
+            <img src="photo.png" alt="Фотография профиля" class="profile-image">
+        </div>
+            
+            <div class="text-content">
+                <div class="section-title">About me</div>
+                <div class="description">
+                   <p>Hi! My name is Elliot. Welcome to my website. I'm a first-year university student studying programming. I'm passionate about robotics and neural networks.</p>
+
+                   <p>But there's another, equally important part of my life: music. Together with my friends Klein, Gretel, and Charlotte, we formed the band "Fading Paper Moonlight". Our sound is a synthesis of shoegaze, emo, and post-rock. We recently started playing together and even played a couple of gigs.</p>
+
+                   <p>It's interesting that for me, programming and music are related activities. Both have their own architecture, rhythm, and harmony. Both require logic and intuition, discipline and freedom.</p>
+                </div>
+
+                <div class="section-title">Other</div>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <span class="contact-label">Skills</span>
+                        <span class="contact-value">HTML, CSS, C++, C</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-label">Role in band</span>
+                        <span class="contact-value">Vocal, guitar</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-label">Location</span>
+                        <span class="contact-value">Belgrade, Yugoslavia</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-label">My channel</span>
+                        <span class="contact-value">
+                        <a href="https://www.youtube.com/channel/UCnXZ83fgekzXGAPEeNQJJHw" target="_blank" style="color: inherit; text-decoration: none;">
+                            Click here!
+                        </a>
+                    </span>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                Elliot Yesli. 1998-1999
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
